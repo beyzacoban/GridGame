@@ -12,7 +12,6 @@ public class GridGame {
 		int[][] grid = new int[N][N];
 		placeItems(grid, N);
 		int maxMovements = (int) (2.5 * N);
-		//System.out.println("Moves: " + maxMovements);
 		int movements = 0;
 		int itemsLeft = N / 2;
 		int[] currentPosition = { 0, 0 };
@@ -84,7 +83,7 @@ public class GridGame {
 				} else if (grid[i][j] == 5) {
 					System.out.print("* "); // for items
 				} else {
-					System.out.print("| "); // for left and right walls
+					System.out.print("| "); // for walls
 				}
 			}
 			System.out.println();
